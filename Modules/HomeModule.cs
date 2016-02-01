@@ -7,6 +7,7 @@ namespace FriendLetter
     public HomeModule()
     {
       Get["/"] = _ => View["hello.html"];
+      Get["/favorite_photos"] = _ => View["favorite_photos.html"];
     }
   }
 }
