@@ -7,15 +7,16 @@ namespace FriendLetter
   {
     public HomeModule()
     {
-      Get["/"] = _ => {
+      Get["/greeting_card"] = _ => {
         var myLetterVariables = new LetterVariables
         {
-          Recipient = "Eric",
-          Sender = "John"
+          Sender = Request.Query["sender"],
+          Recipient = Request.Query["recipient"]
         };
         return View["hello.html", myLetterVariables];
       };
       Get["/favorite_photos"] = _ => View["favorite_photos.html"];
+      Get["/form"] = _ => View["form.html"];
     }
   }
 }
