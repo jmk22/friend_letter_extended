@@ -1,4 +1,5 @@
 using Nancy;
+using Letter.Objects;
 
 namespace FriendLetter
 {
@@ -6,7 +7,13 @@ namespace FriendLetter
   {
     public HomeModule()
     {
-      Get["/"] = _ => View["hello.html"];
+      Get["/"] = _ => {
+        var myLetterVariables = new LetterVariables
+        {
+          Recipient = "Jessica"
+        };
+        return View["hello.html", myLetterVariables];
+      };
       Get["/favorite_photos"] = _ => View["favorite_photos.html"];
     }
   }
