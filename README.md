@@ -3,7 +3,11 @@
 ###Description
 This application illustrates basic setup for a Nancy application with views.
 
-Walkthrough demonstrated here: https://www.learnhowtoprogram.com/c/web-apps-with-nancy/creating-views-with-nancy
+Application starts at end of this lesson:
+https://www.learnhowtoprogram.com/c/web-apps-with-nancy/hello-world-with-nancy
+
+Walkthrough for these lessons demonstrated here: https://www.learnhowtoprogram.com/c/web-apps-with-nancy/creating-views-with-nancy
+https://www.learnhowtoprogram.com/c/web-apps-with-nancy/dynamic-views-with-nancy
 
 ###Instructions
 From project directory, run `> dnu restore` to generate lock file.
